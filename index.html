@@ -22,7 +22,7 @@ HTML
 
         /* Faz a imagem cobrir todo o ecrã */
      .fullscreen-bg {
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             width: 100vw;
@@ -36,6 +36,13 @@ HTML
 
     <!-- Substitua "siops_prontidao.png" pelo nome exato do seu arquivo na raiz -->
     <img src="siops_prontidao.png" alt="Imagem em Ecrã Total" class="fullscreen-bg">
+
+<script>
+        /* Força as dimensões reais do ecrã, ignorando o chrome do browser */
+        const img = document.getElementById('img');
+        img.style.width  = screen.width  + 'px';
+        img.style.height = screen.height + 'px';
+    </script>
 
 </body>
 </html>
