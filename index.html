@@ -21,18 +21,18 @@ HTML
         }
 
         /* Faz a imagem cobrir todo o ecrã */
-        .fullscreen-bg {
+      .fullscreen-bg {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Preenche o ecrã sem distorcer (pode cortar as bordas se a proporção for diferente) */
-            object-position: center; /* Mantém o centro da imagem focado */
+            object-fit: contain; /* Garante que a tabela e o texto aparecem sempre inteiros */
+            object-position: center; 
         }
     </style>
 </head>
 <body>
 
-    <!-- Substitua "SIOPS_Prontidao.png" pelo nome exato do seu arquivo na raiz -->
-    <img src="imagem.png" alt="Imagem em Ecrã Total" class="fullscreen-bg">
+    <!-- Substitua "siops_Prontidao.png" pelo nome exato do seu arquivo na raiz -->
+    <img src="siops_Prontidao.png" alt="Imagem em Ecrã Total" class="fullscreen-bg">
 
 </body>
 </html>
